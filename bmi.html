@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+    <script src="https://kit.fontawesome.com/a1df11952d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <div class="welcome_content">
+        <h1>Welcome to the BMI Calculator!</h1>
+        <p class="intro"><b>BMI, or Body Mass Index</b>, is a simple and commonly used method to estimate whether you have a healthy body weight based on your height and weight. It provides a general indication of whether you are underweight, normal weight, overweight, or obese. Please note that while BMI is a useful tool for most people, it may not be appropriate for athletes, pregnant women, the elderly, or individuals with significant muscle mass.</p>
+        <h4>To use our BMI Calculator.</h4>
+        <ul class="instructions">Follow these steps:
+        <li>1.Enter your height: [<b>centimeters</b>].</li>
+        <li>2.Enter your weight: [<b>kilograms</b>].</li>
+        <li>3.Click the "Calculate" button.</li>
+        </ul>
+        <p class="declare">
+            <b>Note:</b>Keep in mind that BMI is a general guide and doesn't account for factors such as muscle mass or distribution of body fat. If you have concerns about your weight or overall health,
+            <strong> it's always best to consult a healthcare professional</strong>.
+        </p>
+        </div>
+
+        <div class="calculator">
+            <button id="reload" onclick="reloadPage()"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
+
+            <div class="header">
+                <h2>BMI Calculator</h2>
+            </div>
+            <div class="content">
+                <div class="age">
+                    <label for="">Age</label>
+                    <input type="value" id="inp_age">
+                </div>
+                <div class="gender">
+                    <label class="gen" for="gender"><input type="radio" name="radio" id="inp_male"><p class="m">Male</p>   </label>
+                    <label class="gen" for="gender"><input type="radio" name="radio" id="inp_female"><p class="f">Female</p></label>
+                </div>
+                <div class="inputHW">
+                    <div class="height">
+                <label class="inp">Height   (cm)</label>
+                <input class="inp_input" type="number" name="height" id="inp_height">
+                </div>
+
+
+                    <div class="weight">
+                <label class="inp">Weight (kg)</label>
+                <input class="inp_input" type="number" name="weight" id="inp_weight">
+                </div>
+                </div>
+                <button class="trigger" onclick='calculateBMI()'> Calculate BMI</button>
+            </div>
+            <div class="result">
+                <p id="caption"></p>
+                <p id="text"></p>
+                <p id="range"></p>
+                <img src="">
+                <p id="val"></p>
+                <a href="https://www.lybrate.com/en/topic/weight-gain-diet-chart" target="_blank"><button id="weightGain">To Gain Weight</button></a>
+                <a href="https://www.lybrate.com/en/topic/weight-loss" target="_blank"><button id="weightLoss">To Loss Weight</button></a>
+
+            </div>
+        </div>
+    </div>
+
+      
+   
+    <script src="bmi.js"></script>
+</body>
+</html>
+
+
